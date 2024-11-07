@@ -1,6 +1,6 @@
 # TestPlanisense Backend - Arbres en région Parisienne
 
-TestPlanisense est une API qui permet de récupérer des informations sur les arbres en région Parisienne par arrondissement et par genre. 
+TestPlanisense est une API qui permet de récupérer le nombre d'arbres en région Parisienne par arrondissement et par genre. 
 
 ## Prérequis
 
