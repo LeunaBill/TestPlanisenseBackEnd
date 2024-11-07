@@ -19,12 +19,12 @@ public class ArbreRepositoryTest {
     @Test
     public void testFindArbresParArrondissement() {
         List<ArbresParArrondissementDTO> result = arbreRepository.findArbresParArrondissement();
-        Assertions.assertEquals(25, result.size());  // Vérifiez que le nombre d'arrondissements est correct
+        Assertions.assertEquals(25, result.size());
     }
 
     @Test
     public void testFindArbresParGenre() {
         List<ArbresParGenreDTO> result = arbreRepository.findArbresParGenre();
-        Assertions.assertEquals(193, result.size());  // Vérifiez que le nombre de genres d'arbres est correct
+        Assertions.assertEquals(193, result.size());
     }
 }

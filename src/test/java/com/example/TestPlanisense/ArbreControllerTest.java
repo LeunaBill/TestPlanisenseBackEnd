@@ -43,7 +43,7 @@ public class ArbreControllerTest {
 
         Mockito.when(arbreService.getArbresParArrondissement()).thenReturn(mockResult);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/arbres/arrondissements"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/arbres/arrondissements/get"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].arrondissement").value("BOIS DE VINCENNES"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].nombreArbres").value(100));
@@ -58,7 +58,7 @@ public class ArbreControllerTest {
 
         Mockito.when(arbreService.getArbresParGenre()).thenReturn(mockResult);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/arbres/genres"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/arbres/genres/get"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].genre").value("Malus"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].nombreArbres").value(200));
